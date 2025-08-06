@@ -65,6 +65,9 @@ body{
     height: 20rem;
     width: 35rem;
     box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
+    white-space: normal;       /* Allows text to wrap to the next line */
+    word-wrap: break-word;     /* Prevents overflow of long words */
+    text-align: center;  
 }
 
 .communicate .btn{
