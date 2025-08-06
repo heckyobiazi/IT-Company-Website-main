@@ -98,6 +98,17 @@ body{
     background: #00bfff;
 }
 
+@media (max-width: 768px) {
+  .row .btn {
+    width: 100%;           /* Full width on small screens */
+    height: auto;          /* Let height expand based on content */
+    font-size: 1rem;       /* Smaller font for mobile */
+    border-radius: 2rem;   /* Optional: smaller radius on mobile */
+    padding: 1rem;         /* Ensure spacing inside */
+  }
+}
+
+
 .header{
     display: flex;
     align-items: center;
