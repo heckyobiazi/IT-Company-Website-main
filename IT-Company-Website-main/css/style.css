@@ -114,7 +114,7 @@ body{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -123,8 +123,9 @@ body{
 }
 
 .header .logo img{
-    width: 130%;
+    width: auto;
     height: 3rem;
+    margin-right: 5px;
     top: 0;
     left: 0;
 }
@@ -148,6 +149,33 @@ body{
 .header .navbar ul li a:hover{
     color: #00bfff;
     text-decoration: underline;
+}
+
+.navbarak {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.header .navbarak ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.header .navbarak ul li{
+    color: #fff;
+}
+
+.header .navbarak ul li a{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.header .navbarak ul li a:hover{
+    color: #ffffff;
 }
 
 .header .logo i{
@@ -988,6 +1016,11 @@ body{
             text-align: center;
             padding-top: 30px;
         }
+
+        .email-text {
+           text-transform: none;
+          }
+
         
         @media (min-width: 768px) {
             .footer .credit {
