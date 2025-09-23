@@ -53,21 +53,49 @@ body{
     transform: rotate(180deg);
 }
 
-.row .btn{
-    outline: none;
-    border: none;
-    border-radius: 5rem;
-    background: white;
-    border-style: groove;
-    border-color: #002e5f;
-    font-size: 1.5rem;
-    cursor: pointer;
-    height: 20rem;
-    width: 35rem;
-    box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
-    white-space: normal;       /* Allows text to wrap to the next line */
-    word-wrap: break-word;     /* Prevents overflow of long words */
-    text-align: center;  
+.button-row {
+  display: flex;
+  justify-content: space-between; /* spread evenly */
+  flex-wrap: nowrap;              /* keep them all in one line */
+  gap: 1rem;                      /* space between buttons */
+  margin-top: 1rem;               /* space above buttons */
+}
+
+.button-row .btn {
+  flex: 1;
+  max-width: 25%; /* 4 buttons fit in one row */
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  background: white;
+  border-style: groove;
+  border-color: #002e5f;
+  font-size: 1.5rem;
+  cursor: pointer;
+  height: 20rem;
+  box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+
+.row .btn {
+  flex: 1; /* distribute evenly */
+  max-width: 25%; /* ensure 4 fit in one row */
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  background: white;
+  border-style: groove;
+  border-color: #002e5f;
+  font-size: 1.5rem;
+  cursor: pointer;
+  height: 20rem;
+  box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: center;
 }
 
 .communicate .btn{
@@ -1016,6 +1044,19 @@ body{
             text-align: center;
             padding-top: 30px;
         }
+
+        .white-text {
+        color: #fff;
+        }
+
+
+        .no-transform {
+        text-transform: none;
+        font-size: 1.8rem;   /* bigger than default */
+        line-height: 1.6;
+        }
+
+
 
         .email-text {
            text-transform: none;
