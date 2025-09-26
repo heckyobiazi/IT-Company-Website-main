@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
 
+
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -273,6 +274,84 @@ body{
         background-position-x: 100rem;
     }
 }
+
+
+
+.home-serv{
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url(../images/Reliable\ Electronic\ Components\ Distributor.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    padding: 0 1rem;
+    position: relative;
+    overflow: hidden !important;
+}
+
+.home-serv h1{
+    color: #fff;
+    font-size: 5.5rem;
+}
+
+.home-serv h2{
+    color: #fff;
+    font-size: 3rem;
+}
+
+.home-serv .wave{
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    height: 11rem;
+    width: 100%;
+    background: url(../images/wave.png);
+    background-size: 100rem 11rem;
+    animation: waves 8s linear infinite;
+    background-repeat: repeat-x;
+}
+
+.home-serv .wave2{
+    animation-direction: reverse;
+    animation-duration: 6s;
+    opacity: .3;
+}
+
+.home-serv .wave3{
+    animation-duration: 4s;
+    opacity: .5;
+}
+
+@keyframes waves{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 100rem;
+    }
+}
+
+.modal-content {
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.2);
+  font-size: 1.3rem;   /* adjust as needed */
+  line-height: 1.6;
+}
+.modal-header {
+  border-bottom: none;
+}
+.modal-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+li a{
+    text-decoration: none;
+}
+
 
 .about{
     min-height: 55vh;
@@ -1054,6 +1133,9 @@ body{
         text-transform: none;
         font-size: 1.8rem;   /* bigger than default */
         line-height: 1.6;
+        }
+        .no-transform-box {
+        text-transform: none;
         }
 
 

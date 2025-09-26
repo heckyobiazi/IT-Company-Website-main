@@ -1,14 +1,14 @@
 <?php   
     require("./mailing/mailfunction.php");
 
-    $name = $_POST["name"];
-    $phone = $_POST['phone'];
-    $email = $_POST["email"];
-    $message = $_POST["message"];
+    $name = htmlspecialchars($_POST["name"]);
+    $phone = htmlspecialchars($_POST['phone']);
+    $email = htmlspecialchars($_POST["email"]);
+    $message = htmlspecialchars($_POST["message"]);
 
     $body = "<ul><li>Name: ".$name."</li><li>Phone: ".$phone."</li><li>Email: ".$email."</li><li>Message: ".$message."</li></ul>";
 
-    $status = mailfunction("", "Company", $body); //reciever
+    $status = mailfunction("info@akglobalservices.org", "Company", $body); //reciever
     if($status)
         echo '<center><h1>Thanks! We will contact you soon.</h1></center>';
     else
