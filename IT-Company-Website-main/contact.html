@@ -384,13 +384,41 @@
     <div class="contact-form">
         <form action="./contactme.php" method="POST">
             <input type="text" name="name" placeholder="Name" class="contact-form-txt" required>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required placeholder="Contact number" maxlength="11" class="contact-form-phone">
+            <!--<div class="contact-form-phone">
+            <select id="countryCode" name="countryCode" class="contact-form-code" required>
+            <option value="+1">+1</option>
+            <option value="+234" selected>+234</option>
+            <option value="+44">+44</option>
+            <option value="+91">+91</option>-->
+            <!-- more country codes 
+            </select>-->
+            <input type="tel" id="phone" name="phone" class="contact-form-phone" pattern="[0-9]{11}" maxlength="14" placeholder="(+1)2930394849" required>
+            <!--<input type="hidden" id="fullPhone" name="fullPhone">
+            </div>-->
+
+
+
+            <!--<input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required placeholder="Contact number" maxlength="14" class="contact-form-phone">-->
             <input type="email" name="email" placeholder="Email" class="contact-form-email" required>
             <textarea placeholder="Your Message" name="message" class="contact-form-txtarea" required></textarea>
             <input type="submit" value="Submit" name="submit" class="contact-form-btn">
         </form>
     </div>
     </div>
+
+    <script>
+ const countryCode = document.getElementById("countryCode");
+const phone = document.getElementById("phone");
+const fullPhone = document.getElementById("fullPhone");
+
+function updateFullPhone() {
+  fullPhone.value = countryCode.value + phone.value;
+}
+
+countryCode.addEventListener("change", updateFullPhone);
+phone.addEventListener("input", updateFullPhone);
+</script>
+
 
     <!--<section class="faq">
       <h1 class="heading" style="margin-top: -2rem; color: #00bfff;" id="faq">FAQ</h1>
