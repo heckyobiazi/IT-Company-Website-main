@@ -1635,3 +1635,128 @@ li a{
             width: 100%;
         }
 }
+
+/* =========================================================
+   UNIVERSAL MOBILE FIXES — FITS ALL PHONE LAYOUTS
+   ========================================================= */
+
+@media (max-width: 991px) {
+
+  html {
+    font-size: 55%;
+  }
+
+  .header .navbar ul li a,
+  .header .navbarak ul li a {
+    font-size: 1.6rem;
+  }
+
+  .home h1,
+  .home-serv h1 {
+    font-size: 3.5rem;
+  }
+
+  .home h2,
+  .home-serv h2 {
+    font-size: 2rem;
+  }
+
+  /* Fix 4-buttons row */
+  .row,
+  .button-row {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .row .btn,
+  .button-row .btn {
+    flex: 1 1 45%;
+    max-width: 45%;
+    height: auto;
+    padding: 2rem 1rem;
+    font-size: 1.3rem;
+  }
+
+  /* About section */
+  .about .row {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+
+  .about .row .content p,
+  .section-head p {
+    font-size: 1.6rem;
+  }
+
+  /* Service grid */
+  .item {
+    margin: 1rem 0;
+    padding: 2rem 1.5rem;
+  }
+
+  /* Counters grid = 2 columns */
+  .counters .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+/* =========================================================
+   SMALL PHONES FIX (max-width: 600px)
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  html {
+    font-size: 50%;
+  }
+
+  /* Hero titles */
+  .home h1,
+  .home-serv h1 {
+    font-size: 2.8rem;
+  }
+
+  .home h2,
+  .home-serv h2 {
+    font-size: 1.6rem;
+  }
+
+  /* Buttons = single column */
+  .row .btn,
+  .button-row .btn {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 2rem;
+    height: auto;
+  }
+
+  /* Counter grid = 1 column */
+  .counters .container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Cards */
+  .item {
+    padding: 2rem 1.2rem;
+    border-radius: 15px;
+  }
+
+  .item h6 {
+    font-size: 1.8rem;
+  }
+
+  .item p {
+    font-size: 1.4rem;
+  }
+
+  /* Navbar spacing */
+  .header {
+    padding: 1rem 2rem;
+  }
+
+  .header .logo img {
+    height: 2.5rem;
+  }
+}
