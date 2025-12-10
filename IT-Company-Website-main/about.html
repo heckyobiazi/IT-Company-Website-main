@@ -43,8 +43,9 @@
         </nav>
     </header>
 
-  <section id="home" class="home">
+  <section id="home" class="home-about">
     <h1 class="heading">About us</h1>
+    <br><br><br><br><br><br><br><br><br>
     <div class="row">
       <!--<h2> and Information Technology Services.</h2>-->
     <div class="wave wave1"></div>
@@ -56,36 +57,33 @@
    <!-- <h1 class="heading">Our vision</h1> -->
     <div class="row">
         <div class="content">
-           <!-- <h3>Our vision </h3> -->
-            <br>
-              <h4 class="no-transform">AK-Global Services is a product of two jolly, childhood and 
-                College graduate friends who refused to be alienated or separated from each other based on mutually aligned business interests.
-                Our interest is in providing stellar software engineering and Wireless Engineering Consultancy 
-                services that bridge the gap between software requirements elicitation and specification time and 
-                project design and coding time, which may adversely impact software delivery time and the need to conduct frequent update patches on delivery.</h4><br>
-         <!--   <h5><br>
-              <br>
-               We aim to be meticulous when it comes to customer’s project requirements elicitation and specifications, in order to guarantee project success, 
-            <br>at least to a large extent.</h5>-->
-              </div>
-        <div class="button-row">
-          <button class="btn">
-            <h4 class="no-transform-box">AK-GLOBAL SERVICES came into inception in 2009 and has since been providing services in NYC and the UK regional areas. 
-            It is a known fact that the most important step in software development life cycle or processes is the requirements elicitation 
-            and specification which rides on a sound system analysis.</h4></button>
-          <button class="btn"> 
-             <h4 class="no-transform-box">Besides, every software development endeavor is an identified project need and as such,
-             we are prepared to and have proven records of ensuring that our clients receive their deliverables on time and on budget and with quality. 
-            </h4></button>
-          <button class="btn"> 
-             <h4 class="no-transform-box">The often-major militating factor against any successful project effort are the project risks and proper planning that takes adequate care of 
-             risks and requirements in order to facilitate a successful software development project.</h4></button>
-             <button class="btn"> 
-                <br>
-             <h4 class="no-transform-box">The same feat applies to Wireless engineering services where one of our clients has successfully achieved a breakthrough for the 
-                first metropolitan city in the whole of United States to provide a citywide wireless cellular coverage that offers video and 
-                data services to city agencies.</h4></button>
-        </div>
+    
+    <p class="no-transform">
+        AK-Global Services is a product of two jolly, childhood and college graduate friends who refused to be 
+        alienated or separated from each other based on mutually aligned business interests. Our interest is in 
+        providing stellar software engineering and Wireless Engineering Consultancy services that bridge the gap 
+        between software requirements elicitation and specification time and project design and coding time, which 
+        may adversely impact software delivery time and the need to conduct frequent update patches on delivery.
+    </p>
+
+    <p class="no-transform">
+        AK-Global Services came into inception in 2009 and has since been providing services in NYC and the UK 
+        regional areas. It is a known fact that the most important step in the software development life cycle 
+        or process is requirements elicitation and specification, which rides on a sound system analysis. Besides, 
+        every software development endeavor is an identified project need, and as such, we are prepared to—and have 
+        proven records of—ensuring that our clients receive their deliverables on time, on budget, and with quality. 
+        The major obstacles to any successful project effort are project risks and inadequate planning. Proper planning 
+        addresses risks and requirements effectively to facilitate a successful software development project.
+    </p>
+
+    <p class="no-transform">
+        The same feat applies to Wireless Engineering services, where one of our clients successfully achieved a 
+        breakthrough—the first metropolitan city in the entire United States to provide citywide wireless cellular 
+        coverage offering video and data services to city agencies.
+    </p>
+
+</div>
+
     </div>
   </section>
 
@@ -520,12 +518,16 @@ section class="team" style="margin-top: 7rem;">
       <div class="container">
           <div class="row align-items-center">
               <div class="col-md-6 copyright" style="color: #fff; font-size: 1.3rem;">
-                  Copyright &copy; 2025 AK Global Services. All Rights Reserved.
+                  Copyright &copy; <span id="year"></span> AK Global Services. All Rights Reserved.
               </div>
           </div>
       </div>
   </div>
 
   <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
+
+  <script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

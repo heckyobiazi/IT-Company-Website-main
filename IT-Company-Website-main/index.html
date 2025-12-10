@@ -46,8 +46,9 @@
   <section id="home" class="home">
       <h2>We Pride Ourselves In Providing Quality Software Engineering</h2>
 		<h4 class="white-text">Wireless Engineering Services That Meets Your Assisted Requirements Generation</h4> 
-        <br><br><br>
-		<h4 class="white-text">That is Designed Accordingly And Customized To your Budget Such That No Deliverables 
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+		<h4 class="white-text">That is Designed Accordingly And Customized</h4>
+        <h4 class="white-text">To your Budget Such That No Deliverables 
 		Are Missed During Final Milestone Achievement. </h4>
       <!--<h2> and Information Technology Services.</h2>-->
     <div class="wave wave1"></div>
@@ -198,17 +199,23 @@
 
 <div class="testimonials">
   <div class="testimonial-center">
-    <div class="testimonial-img">
-      <img src="./images/Picture1.png" alt="Testimonial image">
-    </div>
 
-    <div class="testimonial-img">
-      <img src="./images/Picture2.png" alt="Testimonial image">
-    </div>
+    <!-- IMAGE 1 -->
+    <a class="testimonial-img" 
+       data-type="image" 
+       data-fslightbox="gallery" 
+       href="./images/Picture1.png">
+      <img src="./images/Picture1.png" alt="Testimonial Image 1">
+    </a>
 
-    <!--<div class="testimonial-img">
-      <img src="./images/Picture3.png" alt="Testimonial image">
-    </div>-->
+    <!-- IMAGE 2 -->
+    <a class="testimonial-img" 
+       data-type="image" 
+       data-fslightbox="gallery" 
+       href="./images/Picture2.png">
+      <img src="./images/Picture2.png" alt="Testimonial Image 2">
+    </a>
+
   </div>
 </div>
 
@@ -414,21 +421,26 @@
 
                   <div class="col-lg-3 col-md-6 footer-contact" style="font-size: 1.5rem;">
                       <h4>Address</h4>
-                      <p>
-                          1103 East 82nd Street,<br>
-                          Brooklyn NY 11236,<br>
-                          United States <br>
-            
-                          262 Stained Road,<br>
-                          Ilford, Essex IG1 2UP,<br>
-                          United Kingdom <br>
+                            <p>
+                            1103 East 82nd Street,<br>
+                            Brooklyn NY 11236,<br>
+                            United States
+                            </p>
 
-                           <div class="footer-links">
-                        <ul>
-                         <li><i class="ion-ios-arrow-forward"></i> <a href="#">Terms & condition</a></li>
-                          <li><i class="ion-ios-arrow-forward"></i> <a href="#">Privacy policy</a></li>
-                         </ul>
-                         </div>
+                            <hr class="address-divider">
+
+                            <p>
+                            262 Stained Road,<br>
+                            Ilford, Essex IG1 2UP,<br>
+                            United Kingdom
+                            </p>
+
+                            <div class="footer-links">
+                            <ul>
+                                <li><i class="ion-ios-arrow-forward"></i> <a href="#">Terms & condition</a></li>
+                                <li><i class="ion-ios-arrow-forward"></i> <a href="#">Privacy policy</a></li>
+                            </ul>
+                            </div>
 
                          
                         <!--<strong>Phone:</strong> +1-347-210-8290<br>
@@ -484,12 +496,19 @@
       <div class="container">
           <div class="row align-items-center">
               <div class="col-md-6 copyright" style="color: #fff; font-size: 1.3rem;">
-                  Copyright &copy; 2025 AK Global Services. All Rights Reserved.
+                  Copyright &copy; <span id="year"></span> AK Global Services. All Rights Reserved.
               </div>
           </div>
       </div>
   </div>
 
   <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
