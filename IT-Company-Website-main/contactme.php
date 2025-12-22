@@ -11,9 +11,14 @@
 
     $status = mailfunction("info@ak-globalservices.org", "Company", $body); //reciever
     if($status)
-        echo '<center><h1>Thanks! We will contact you soon.</h1></center>';
+        echo "<script>
+            alert('Thanks! We will contact you soon.');
+            window.location.href = 'contact.html";
     else {
-    echo '<center><h1>Error sending message! Please try again.</h1></center>';
+    echo "<script>
+            alert('Error sending message. Please try again.');
+            window.location.href = 'contact.html';
+        </script>";
     echo '<p style="color:red;">' . $mail->ErrorInfo . '</p>'; // <-- print the real reason
 }
 ?>

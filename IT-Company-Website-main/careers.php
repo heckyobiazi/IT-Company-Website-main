@@ -19,13 +19,21 @@
 	{
 		$status = mailfunction("info@ak-globalservices.org", "Company", $body, $filenameWithDirectory); //reciever
         if($status)
-            echo '<center><h1>Thanks! We will contact you soon.</h1></center>';
+            echo echo "<script>
+            alert('Thanks! Your application has been submitted successfully.');
+            window.location.href = 'contact.html';
+        </script>";
         else
-            echo '<center><h1>Error sending message! Please try again.</h1></center>';
+            echo "<script>
+            alert('Message failed to send. Please try again.');
+            window.location.href = 'contact.html';
+        </script>";
 	}
 	else 
 	{
-		echo "<center><h1>Error uploading file! Please try again.</h1></center>";
+		echo "<script>
+        alert('File upload failed. Please try again.');
+    </script>";
 	}
 
 ?>
