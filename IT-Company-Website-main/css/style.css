@@ -151,18 +151,12 @@ body{
     position: fixed;
 }
 
-.header .logo {
-        height: 90px;        /* this controls logo size */
-        width:auto;
-        display: flex;
-        align-items: center;
-}
-
-
 .header .logo img{
-        height: 100%;
-        width: auto;
-        object-fit: contain;
+    width: auto;
+    height: 3rem;
+    margin-right: 5px;
+    top: 0;
+    left: 0;
 }
 
 .header .navbar ul{
@@ -1447,13 +1441,13 @@ li a{
     }
 
     .header .logo img{
-        height: 48px;        /* try 48–64px */
-        width: auto;
-        object-fit: contain;
+        width: 20%;
+        height: 3rem;
         top: 0;
         left: 0;
         background-size: cover;
     }
+
 
     .header .fa-bars{
         display: block;
