@@ -1,10 +1,11 @@
 <?php   
     require("./mailing/mailfunction.php");
 
-    $name = htmlspecialchars($_POST["name"]);
-    $phone = htmlspecialchars($_POST['phone']);
-    $email = htmlspecialchars($_POST["email"]);
-    $message = htmlspecialchars($_POST["message"]);
+    $name    = htmlspecialchars(trim($_POST['name']));
+    $phone   = htmlspecialchars(trim($_POST['phone'] ?? ''));
+    $email   = htmlspecialchars(trim($_POST['email']));
+    $message = htmlspecialchars(trim($_POST['message']));
+
 
     $body = "<ul><li>Name: ".$name."</li><li>Phone: ".$phone."</li><li>Email: ".$email."</li><li>Message: ".$message."</li></ul>";
 

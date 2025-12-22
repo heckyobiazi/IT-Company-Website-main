@@ -151,12 +151,18 @@ body{
     position: fixed;
 }
 
+.header .logo {
+        height: 90px;        /* this controls logo size */
+        width:auto;
+        display: flex;
+        align-items: center;
+}
+
+
 .header .logo img{
-    width: auto;
-    height: 3rem;
-    margin-right: 5px;
-    top: 0;
-    left: 0;
+        height: 100%;
+        width: auto;
+        object-fit: contain;
 }
 
 .header .navbar ul{
@@ -424,7 +430,7 @@ body{
 .home-contact{
     min-height: 100vh;
     width: 100vw;
-    background-image: url(../images/contact1.jpg);
+    background-image: url(../images/contact.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -1441,8 +1447,9 @@ li a{
     }
 
     .header .logo img{
-        width: 20%;
-        height: 3rem;
+        height: 48px;        /* try 48–64px */
+        width: auto;
+        object-fit: contain;
         top: 0;
         left: 0;
         background-size: cover;
